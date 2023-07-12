@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/434d64d492.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>IMDB-HYF</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- logo -->
+      <div class="logo">
+        <div class="container">
+          <p>HYF <span>API PROJECT</span></p>
+        </div>
+      </div>
+
+      <!-- search container -->
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search Movie</h3>
+          <input
+            type="text"
+            class="form-control"
+            id="movie-search-box"
+            placeholder="Search Movie Title.."
+            onkeydown="findMovies()"
+          />
+          <div class="search-list" id="search-list">
+            <!--we'll dynamically populate the content -->
+          </div>
+        </div>
+      </div>
+
+      <!-- result container -->
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid">
+            <!--we'll dynamically populate the content -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading page -->
+    <div class="loading-container">
+      <div class="loading-spinner"></div>
+      <p>Loading...</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
