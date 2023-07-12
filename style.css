@@ -4,7 +4,7 @@
   --md-dark-color: #1d1d1d;
   --dark-color: #171717;
   --light-dark-color: #292929;
-  --yellow-color: #d4aa11;
+  --purple-color: #e8e8fe;
 }
 
 * {
@@ -33,7 +33,7 @@ img {
 }
 
 .search-container {
-  background-color: var(--yellow-color);
+  background-color: var(--purple-color);
   height: 180px;
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ img {
   font-weight: bold;
 }
 .logo p span {
-  color: var(--yellow-color);
+  color: var(--purple-color);
 }
 .search-element {
   display: flex;
@@ -61,7 +61,7 @@ img {
 .search-element h3 {
   align-self: center;
   font-size: 2rem;
-  color: #fff;
+  color: #171717;
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
@@ -110,6 +110,7 @@ img {
 .search-item-info h3 {
   font-size: 1rem;
   font-weight: 600;
+  color: #fff;
 }
 .search-item-info p {
   font-size: 0.8rem;
@@ -146,7 +147,7 @@ img {
 .movie-poster img {
   max-width: 300px;
   margin: 0 auto;
-  border: 4px solid var(--yellow-color);
+  border: 4px solid var(--purple-color);
 }
 .imdb-rate {
   position: absolute;
@@ -154,8 +155,8 @@ img {
   top: 35%;
   padding: 5px;
   height: 40px;
-  color: #fff;
-  background-color: #d4aa11;
+  color: #171717;
+  background-color: var(--purple-color);
   font-size: 24px;
   font-weight: 600;
 }
@@ -166,7 +167,7 @@ img {
 }
 .movie-title {
   font-size: 2rem;
-  color: var(--yellow-color);
+  color: var(--purple-color);
 }
 
 .movie-misc-info {
@@ -181,7 +182,8 @@ img {
   font-weight: 500;
 }
 .movie-info .rated {
-  background-color: var(--yellow-color);
+  background-color: var(--purple-color);
+  color: #171717;
   padding: 0.4rem;
   margin: 0 0.4rem;
   border-radius: 3px;
@@ -206,7 +208,7 @@ img {
   margin: 1rem auto;
 }
 .movie-info .language {
-  color: var(--yellow-color);
+  color: var(--purple-color);
   font-style: italic;
 }
 .movie-info .awards {
@@ -214,7 +216,7 @@ img {
   font-size: 0.9rem;
 }
 .movie-info .awards i {
-  color: var(--yellow-color);
+  color: var(--purple-color);
   margin: 1rem 0.7rem 0 0;
 }
 
@@ -244,7 +246,7 @@ img {
 .loading-spinner {
   width: 50px;
   height: 50px;
-  border: 5px solid var(--yellow-color);
+  border: 5px solid var(--purple-color);
   border-top-color: transparent;
   border-radius: 50%;
   animation: spin 1s infinite linear;
