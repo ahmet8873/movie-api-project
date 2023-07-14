@@ -2,6 +2,7 @@ const searchList = document.getElementById("search-list");
 import { loadMovieDetails } from "./loadMovieDetails.js";
 export const displayMovieList = (movies) => {
   searchList.innerHTML = "";
+  //   loop through the movies in the response
   for (let i = 0; i < movies.length; i++) {
     let movieListItem = document.createElement("div");
     movieListItem.id = movies[i].imdbID;
