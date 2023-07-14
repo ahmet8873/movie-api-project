@@ -1,4 +1,4 @@
-const apikey = "cf79b36e";
+import { apikey } from "./constant.js";
 
 const searchInput = document.getElementById("movie-search-box");
 const searchList = document.getElementById("search-list");
@@ -16,6 +16,8 @@ const findMovies = () => {
     searchList.classList.add("hide-search-list");
   }
 };
+
+searchInput.addEventListener("keyup", findMovies);
 
 // load movies from api
 const loadMovies = async (searchTerm) => {
@@ -37,6 +39,7 @@ const displayMovieList = (movies) => {
     movieListItem.id = movies[i].imdbID;
     movieListItem.classList.add("search-list-item");
     // check if poster is applicable
+    let moviePoster;
     if (movies[i].Poster !== "N/A") {
       moviePoster = movies[i].Poster;
     } else {
