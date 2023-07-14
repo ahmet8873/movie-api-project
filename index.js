@@ -5,7 +5,7 @@ import { initialLoading } from "./initialLoadingPage.js";
 const searchInput = document.getElementById("movie-search-box");
 const searchList = document.getElementById("search-list");
 
-const findMovies = () => {
+const searchMovieTitle = () => {
   let searchTerm = searchInput.value.trim();
   if (searchTerm.length > 0) {
     searchList.classList.remove("hide-search-list");
@@ -15,5 +15,5 @@ const findMovies = () => {
   }
 };
 
-searchInput.addEventListener("keyup", findMovies);
+searchInput.addEventListener("keyup", searchMovieTitle);
 initialLoading();
