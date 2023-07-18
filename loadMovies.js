@@ -7,7 +7,7 @@ export const loadMovies = async (searchTerm) => {
   const response = await fetch(url);
   const data = await response.json();
 
-  console.log(data);
+  console.log(`data: `, data);
   if (data.Response === "True") {
     displayMovieList(data.Search);
   }
