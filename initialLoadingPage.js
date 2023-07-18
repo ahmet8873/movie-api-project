@@ -2,14 +2,20 @@ import { apikey } from "./constant.js";
 const mainWrapper = document.querySelector(".wrapper");
 const loadingContainer = document.querySelector(".loading-container");
 import { displayMovieDetails } from "./displayMovieDetails.js";
+import { movieNames } from "./randomMovieName.js";
 // initial loading of the application
 
 export function initialLoading() {
   window.addEventListener("load", async () => {
     mainWrapper.style.display = "none";
     loadingContainer.style.display = "flex";
+
+    // Randomly select a movie name from the array
+    const randomIndex = Math.floor(Math.random() * movieNames.length);
+    const randomMovieName = movieNames[randomIndex];
+
     const response = await fetch(
-      `https://www.omdbapi.com/?s=Memento&page=1&apikey=${apikey}`
+      `https://www.omdbapi.com/?s=${randomMovieName}&page=1&apikey=${apikey}`
     );
     const data = await response.json();
     let imdbId = data.Search[0].imdbID;
