@@ -24,7 +24,7 @@ export const loadMovieDetails = () => {
         mainWrapper.style.display = "block";
         loadingContainer.style.display = "none";
 
-        // console.log(movieDetailData);
+        console.log("movieDetailData: ", movieDetailData);
         displayMovieDetails(movieDetailData);
       } catch (error) {
         mainWrapper.style.display = "none";
