@@ -6,7 +6,7 @@ const searchInput = document.getElementById("movie-search-box");
 const searchList = document.getElementById("search-list");
 
 const searchMovieTitle = () => {
-  let searchTerm = searchInput.value.trim();
+  const searchTerm = searchInput.value.trim();
   if (searchTerm.length > 0) {
     searchList.classList.remove("hide-search-list");
     loadMovies(searchTerm);
@@ -15,5 +15,15 @@ const searchMovieTitle = () => {
   }
 };
 
-searchInput.addEventListener("keyup", searchMovieTitle);
+const debounce = (fn, delay) => {
+  let id;
+  return () => {
+    if (id) clearTimeout(id);
+    id = setTimeout(() => {
+      fn();
+    }, delay);
+  };
+};
+searchInput.addEventListener("keyup", debounce(searchMovieTitle, 500));
+
 initialLoading();

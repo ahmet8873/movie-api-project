@@ -1,8 +1,9 @@
 import { apikey } from "./constant.js";
-const mainWrapper = document.querySelector(".wrapper");
-const loadingContainer = document.querySelector(".loading-container");
 import { displayMovieDetails } from "./displayMovieDetails.js";
 import { movieNames } from "./randomMovieName.js";
+
+const mainWrapper = document.querySelector(".wrapper");
+const loadingContainer = document.querySelector(".loading-container");
 // initial loading of the application
 
 export function initialLoading() {
