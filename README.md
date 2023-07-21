@@ -1,7 +1,7 @@
 
 ## live 
  https://ahmet8873.github.io/movie-api-project/
-
+![project image](https://i.ibb.co/RQRJrTS/Screenshot-2023-07-21-at-15-02-38.png)
  
 
 # movie-api-project
