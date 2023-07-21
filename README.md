@@ -1,5 +1,6 @@
 # Movie-API Project
 ![project image](https://i.ibb.co/RQRJrTS/Screenshot-2023-07-21-at-15-02-38.png)
+![project image](https://i.ibb.co/Pw4YQcY/Screenshot-2023-07-21-at-15-03-25.png)
 ## live 
  https://ahmet8873.github.io/movie-api-project/
 
