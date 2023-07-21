@@ -2,7 +2,7 @@
 ## live 
  https://ahmet8873.github.io/movie-api-project/
 
- ![Project Banner](https://repository-images.githubusercontent.com/405182945/dff7288f-c493-45de-8089-8b16ff952d7b)
+ 
 
 # movie-api-project
 This project is a web application that utilizes the OMDB-API to allow users to search for movies and retrieve information about them.
